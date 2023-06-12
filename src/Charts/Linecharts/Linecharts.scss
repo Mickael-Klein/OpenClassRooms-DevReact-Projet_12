@@ -1,0 +1,24 @@
+.lineChart {
+  width: 31%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ff0000;
+  position: relative;
+
+  .recharts-legend-wrapper {
+    .lineLegend {
+      font-size: 16px;
+      color: rgba($color: white, $alpha: 0.75);
+      margin-top: 10%;
+      margin-left: 28%;
+    }
+  }
+}
+
+.customLineToolTip {
+  background-color: white;
+  padding: 0.6rem;
+  font-weight: 500;
+  font-size: 0.6rem;
+}

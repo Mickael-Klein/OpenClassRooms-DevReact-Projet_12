@@ -1,0 +1,19 @@
+.radarChart {
+  width: 31%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #282d30;
+  position: relative;
+}
+
+.tool-tip__radar-chart {
+  background-color: rgba($color: white, $alpha: 0.8);
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

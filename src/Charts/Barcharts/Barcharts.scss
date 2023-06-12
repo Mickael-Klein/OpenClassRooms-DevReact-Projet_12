@@ -1,0 +1,79 @@
+@import "../../Utils/Styles/Variables";
+
+.barCharts {
+  width: 100%;
+  aspect-ratio: 2.2/1;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+
+  &__mainContainer {
+    width: 96%;
+    height: 100%;
+    margin: auto;
+    padding-top: 24px;
+
+    .barCharts__container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 30px;
+      font-weight: 500;
+
+      .barCharts-title {
+        margin-left: 2%;
+      }
+
+      .barCharts-legend {
+        margin-right: 3%;
+        min-width: 33%;
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        color: #74798c;
+
+        &__weight {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+
+          .blackDot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: black;
+          }
+        }
+
+        &__calories {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+
+          .redDot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.recharts-legend-item {
+  display: none !important;
+}
+
+.tool-tip__bar-chart {
+  background-color: #e60000;
+  width: 60px;
+  aspect-ratio: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  gap: 20px;
+}

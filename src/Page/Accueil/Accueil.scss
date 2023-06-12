@@ -1,0 +1,64 @@
+@import "../../Utils/Styles/Variables";
+
+main {
+  margin: 160px 6% 200px 15%;
+
+  .greeting {
+    margin-bottom: 60px;
+
+    &__user {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 41px;
+
+      span {
+        color: $color-primary;
+      }
+    }
+
+    &__congrats {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  .stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+
+    &__graphs {
+      display: flex;
+      flex-direction: column;
+      width: 74%;
+      gap: 30px;
+
+      .multipleSquaresCharts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 25px;
+        width: 100%;
+
+        .squareChart {
+          min-width: 267px;
+        }
+      }
+    }
+
+    &__nutrition {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 39px;
+      width: 23%;
+      min-width: 248px;
+    }
+  }
+
+  .space {
+    width: 100%;
+    height: 50px;
+  }
+}
