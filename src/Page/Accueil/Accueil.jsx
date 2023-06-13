@@ -66,7 +66,12 @@ export default function Accueil() {
       <LateralNav arrOfElem={arrOfLogosForLateralNav} />
 
       {isLoading && <h1>Chargement</h1>}
-      {isError && <h1>Error</h1>}
+      {isError && (
+        <h1>
+          Cette portion du site est actuellement à l'entraînement, elle revient
+          chargée à bloc d'ici peu de temps
+        </h1>
+      )}
       {!isLoading && !isError && user && (
         <main>
           <section className="greeting">
