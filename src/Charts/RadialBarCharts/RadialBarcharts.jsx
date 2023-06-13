@@ -1,14 +1,8 @@
 import React from "react";
-import {
-  RadialBarChart,
-  RadialBar,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
+import { RadialBarChart, RadialBar, ResponsiveContainer } from "recharts";
 import "./RadialBarcharts.scss";
 
 export default function RadialBarcharts({ data }) {
-  console.log(data);
   const startAngleDegrees = 90;
   return (
     <>

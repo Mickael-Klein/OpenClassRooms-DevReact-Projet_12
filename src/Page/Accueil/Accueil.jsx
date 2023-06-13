@@ -50,14 +50,11 @@ export default function Accueil() {
 
   useEffect(() => {
     if (user !== null) {
-      console.log(user);
       setUserKeyData(user.keyData);
       setUserActivity(user.activity);
       setUserSession(user.session);
       setUserPerformance(user.performance);
-      console.log(userPerformance);
       setUserScore(user.score);
-      console.log("userScore", userScore);
     } // eslint-disable-next-line
   }, [user]);
 
@@ -65,9 +62,9 @@ export default function Accueil() {
     <>
       <LateralNav arrOfElem={arrOfLogosForLateralNav} />
 
-      {isLoading && <h1>Chargement</h1>}
+      {isLoading && <h1 className="info">Chargement</h1>}
       {isError && (
-        <h1>
+        <h1 className="info">
           Cette portion du site est actuellement à l'entraînement, elle revient
           chargée à bloc d'ici peu de temps
         </h1>
